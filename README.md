@@ -7,6 +7,15 @@
     </a>
 </div>
 
+### Saleae Fork
+
+This fork makes a single change to electron-devtools-vendor.
+It replaces the included version of React Dev Tools (4.28.5 at the time of the fork) with a custom older version, as downloaded from here:
+
+https://github.com/facebook/react/issues/25843#issuecomment-1406766561
+
+This is because Electron (tested on version 27) does not support the V3 manifest yet. This custom build of react dev tools uses the V2 manifest, and is known to work with Electron 27.
+
 ### Feature
 
 #### unrecognized manifest key warning
